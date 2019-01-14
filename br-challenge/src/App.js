@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Header from './components/header';
 import ListView from './pages/listView';
-import DetailView from './pages/detailView';
 import RestaurantData from './components/testData.json'
-import { Navbar, NavbarBrand } from 'reactstrap';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,15 +11,21 @@ class App extends Component {
     super(props);
     this.state = {
       restaurants: RestaurantData,
-      selectedRestaurant: {},
+      chosenRestaurant: {},
       showDetails: false,
     }
-    this.selectRestaurant = this.selectRestaurant.bind(this)
+    this.selectRestaurant = this.selectRestaurant.bind(this);
+    this.closeDetailView = this.closeDetailView.bind(this);
   }
 
+  // sets state to have the selected restaurant and opens the burger menu
   selectRestaurant(restaurant) {
-    this.setState({ selectedRestaurant: restaurant, showDetails: true })
+    this.setState({ chosenRestaurant: restaurant, showDetails: true });
+  }
 
+  // closes the burger menu 
+  closeDetailView() {
+    this.setState({ showDetails: false });
   }
 
 
@@ -30,8 +33,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {/* <ListView data={this.state.restaurants} selectRestaurant={this.selectRestaurant} /> */}
-        <DetailView />
+        <ListView data={this.state.restaurants}
+          chosenRestaurant={this.state.selectedRestaurant}
+          selectRestaurant={this.selectRestaurant}
+          showDetails={this.state.showDetails}
+          closeDetailView={this.closeDetailView} />
       </div>
     );
   }
