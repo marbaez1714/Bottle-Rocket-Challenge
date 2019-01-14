@@ -3,10 +3,95 @@
 
 }
 
+/* Header Styling */
+.siteHeader{
+  top:0;
+  z-index: 2;
+  position: fixed !important;
 
-/* styling for the main header */
-.mainHeader{
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  height:10vh;
+  max-width: 100vw !important;
   background-color: #43E895;
+
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.mainTitle{
+  font-size: 34px;
+  font-weight: bold;
+  height:10vh
+}
+.mapIcon{
+  height: 2rem;
+}
+
+/* List View Styling */
+.listView{
+  max-width: 100vw !important;
+  margin: 10vh 0 0 0;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Restaurant Div Styling */
+.overlayBox{
+  height:15rem;
+  display:block;
+  position:relative;
+  cursor: pointer;
+}
+.restaurant{
+  height:15rem;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.restaurantImage{
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center
+}
+.restaurantGradient{
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  top:0;
+  left: 0;
+}
+.restaurantName{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+
+  z-index: 1;
+  bottom:36px;
+  left: 12px;
+  position: absolute;
+}
+.restaurantCatagory{
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+
+  z-index: 1;
+  bottom:12px;
+  left: 12px;
+  position: absolute;
+}
+
+/* Detail View Styling */
+.detailViewContainer{
+  height:90vh;
+  min-width:100vw;
+  margin-top:10vh;
+  background-color: #ffffff;
+}
+
+.exitBar{
+  height:90vh;
+  background-color: #2a2a2a
+
 }

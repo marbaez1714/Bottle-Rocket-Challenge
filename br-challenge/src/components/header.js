@@ -1,18 +1,22 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import MapLogo from '../images/icon_map@2x.png'
 
-
-// main app header
 
 export default function Header(props) {
     return (
-        // creates a container for the app header
-        <Container className='mainHeader'>
+        <Container className="siteHeader">
             <Row>
-                <Col>
-                    <h1>Lunch Tyme</h1>
+                {/* holds the title of the app */}
+                <Col className="mainTitle" md={{ size: '4', offset: '4' }}>
+                    <span>Lunch Tyme</span>
+                </Col>
+                {/* holds the map icon */}
+                <Col md="4">
+                    <img className="mapIcon" src={MapLogo} alt='Map View' />
                 </Col>
             </Row>
         </Container>
+
     )
 }
