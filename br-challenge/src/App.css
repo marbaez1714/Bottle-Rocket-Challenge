@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+
+}
+
+
+/* styling for the main header */
+.mainHeader{
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  background-color: #43E895;
+}
