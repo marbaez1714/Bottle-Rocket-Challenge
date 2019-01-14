@@ -6,21 +6,23 @@ import PlaceHolderMap from '../images/map.png';
 export default function DetailView(props) {
     return (
         <Container className="detailViewContainer">
-            <Row>
-                {/* left bar that holds the exit button */}
-                <Col className="exitBar" xs="1">
-                    <img className="closeButton" src={CloseButton} alt='' onClick={event => props.closeDetailView()} />
-                </Col>
-                <Col className="detailViewCol" xs='11'>
-                    <div className="mapHolder" style={{ backgroundImage: 'url(' + PlaceHolderMap + ")" }} />
-                    <div className="detailViewGeneralInfo">
-                        <div className='detailHolder'>
-                            <span>{props.chosenRestaurant.name}</span>
-                            <span></span>
+            {props.showDetails === false ? '' :
+                <Row>
+                    {/* left bar that holds the exit button */}
+                    <Col className="exitBar" xs="1">
+                        <img className="closeButton" src={CloseButton} alt='' onClick={event => props.closeDetailView()} />
+                    </Col>
+                    <Col className="detailViewCol" xs='11'>
+                        <div className="mapHolder" style={{ backgroundImage: 'url(' + PlaceHolderMap + ")" }} />
+                        <div className="detailViewGeneralInfo">
+                            <div className='detailHolder'>
+                                <span className="detailName">{props.chosenRestaurant.name}</span>
+                                <span className="detailCatagory">{props.chosenRestaurant.category}</span>
+                            </div>
                         </div>
-                    </div>
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
+            }
         </Container>
     )
 }

@@ -87,6 +87,8 @@
   height:90vh;
   min-width:100vw;
   background-color: white;
+  font-family: 'Roboto', sans-serif;
+
 }
 .exitBar{
   height:90vh;
@@ -111,14 +113,16 @@
 .detailViewGeneralInfo{
   height:10vh;
   background-color: #34B379;
-
   color:#ffffff;
-  
-
 }
 
-
-
+.detailName{
+  font-size: 4vh;
+  text-align: left;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
 
 /* Burger menu styling */
 .bm-menu {

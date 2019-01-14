@@ -34,7 +34,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <ListView data={this.state.restaurants}
-          chosenRestaurant={this.state.selectedRestaurant}
+          chosenRestaurant={this.state.chosenRestaurant}
           selectRestaurant={this.selectRestaurant}
           showDetails={this.state.showDetails}
           closeDetailView={this.closeDetailView} />
