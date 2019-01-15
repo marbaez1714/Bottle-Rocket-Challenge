@@ -109,19 +109,25 @@
   background-position: center;
 
 }
-
 .detailViewGeneralInfo{
   height:10vh;
   background-color: #34B379;
   color:#ffffff;
 }
-
 .detailName{
   font-size: 4vh;
-  text-align: left;
   font-weight: bold;
-  text-align: left;
   color: #ffffff;
+  display: block;
+  text-align: left;
+  margin-left:12px;
+}
+.detailCatagory{
+  font-size: 2vh;
+  color: #ffffff;
+  display: block;
+  text-align: left;
+  margin-left:12px;
 }
 
 /* Burger menu styling */
