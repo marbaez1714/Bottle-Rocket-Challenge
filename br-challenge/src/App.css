@@ -19,7 +19,13 @@
 .mainTitle{
   font-size: 34px;
   font-weight: bold;
-  height:10vh
+  height:10vh;
+  display: table;
+}
+.titleText{
+  display: table-cell;
+  padding-bottom:1vh;
+  vertical-align: bottom;
 }
 .mapIcon{
   height: 2rem;

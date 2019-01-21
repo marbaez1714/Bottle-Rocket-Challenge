@@ -9,7 +9,7 @@ export default function Header(props) {
             <Row>
                 {/* holds the title of the app */}
                 <Col className="mainTitle" md={{ size: '12' }}>
-                    <span>Lunch Tyme</span>
+                    <span className="titleText">Lunch Tyme</span>
                 </Col>
 
             </Row>
