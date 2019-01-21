@@ -29,6 +29,8 @@ class App extends Component {
   }
 
 
+
+
   render() {
     return (
       <div className="App">
@@ -37,7 +39,9 @@ class App extends Component {
           chosenRestaurant={this.state.chosenRestaurant}
           selectRestaurant={this.selectRestaurant}
           showDetails={this.state.showDetails}
-          closeDetailView={this.closeDetailView} />
+          closeDetailView={this.closeDetailView}
+          popOverToggle={this.popOverToggle}
+          popOverOpen={this.state.popOverOpen} />
       </div>
     );
   }

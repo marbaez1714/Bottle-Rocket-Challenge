@@ -8,13 +8,10 @@ export default function Header(props) {
         <Container className="siteHeader">
             <Row>
                 {/* holds the title of the app */}
-                <Col className="mainTitle" md={{ size: '4', offset: '4' }}>
+                <Col className="mainTitle" md={{ size: '12' }}>
                     <span>Lunch Tyme</span>
                 </Col>
-                {/* holds the map icon */}
-                <Col md="4">
-                    <img className="mapIcon" src={MapLogo} alt='Map View' />
-                </Col>
+
             </Row>
         </Container>
 

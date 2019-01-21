@@ -20,7 +20,7 @@ export default function ListView(props) {
                 pageWrapId={"page-wrap"}
                 outerContainerId={"outer-container"}
             >
-                <DetailView closeDetailView={props.closeDetailView} chosenRestaurant={props.chosenRestaurant} showDetails={props.showDetails} />
+                <DetailView closeDetailView={props.closeDetailView} chosenRestaurant={props.chosenRestaurant} showDetails={props.showDetails} popOverToggle={props.popOverToggle} popOverOpen={props.popOverOpen} />
             </Menu>
 
             {/* list view is always open under the detailed view */}

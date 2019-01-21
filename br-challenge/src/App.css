@@ -101,13 +101,26 @@
 .detailViewCol{
   padding: 0 0 0 0 !important;
 }
-
+.detailViewMap{
+  height:50vh;
+  width:100%
+}
 .mapHolder{
   height:30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+}
+.hotDogHolder{
+  height:5vh;
+  width:5vh;
+  background-color: #34B379;
+  border-radius: 50%;
+}
+
+.hotDogImage{
+  height:5vh;
 }
 .detailViewGeneralInfo{
   height:10vh;
@@ -129,7 +142,15 @@
   text-align: left;
   margin-left:12px;
 }
+.moreInfoHolder{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5vh;
+  text-align: left;
+  margin-left:12px;
+  margin-top:12px;
 
+
+}
 /* Burger menu styling */
 .bm-menu {
   background: #ffffff;
